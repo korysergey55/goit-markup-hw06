@@ -391,7 +391,7 @@
             </div>
         </div>
     </footer>
-<!---backdrop------>
+<!---backdrop-modal-form----->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal-window">
           <button class="modal-button-close" type="button" data-modal-close >
@@ -400,6 +400,40 @@
               </use>
             </svg>
           </button>
+          <h2 class="title-form"> Оставьте свои данные, мы вам перезвоним</h2>
+          <form class="modal-form" action="" method="">
+            <label class="label" for="user-name">Имя</label>
+            <span class="modal-form-icon-thumb">
+              <input class="modal-input" type="text" id="user-name" name="user-name" minlength="2"  required>
+              <svg class="modal-icon-svg" width="16" height="15">
+                <use href="./images/sprite-main.svg#icon-form-name"></use>
+              </svg>
+            </span>
+            <label class="label" for="user-tel">Телефон</label>
+            <span class="modal-form-icon-thumb">
+              <input class="modal-input" type="tel" id="user-tel" name="user-tel" required>
+              <svg class="modal-icon-svg" width="16" height="15">
+                <use href="./images/sprite-main.svg#icon-form-tel"></use>
+              </svg>
+            </span>
+            <label class="label" for="user-email">Почта</label>
+            <span class="modal-form-icon-thumb">
+              <input class="modal-input" type="email" id="user-email" name="user-email"  required>
+              <svg class="modal-icon-svg" width="16" height="15">
+                <use href="./images/sprite-main.svg#icon-form-mail"></use>
+              </svg>
+            </span>
+            <label class="label" for="user-coments">Коментарии</label>
+            <textarea class="modal-texterea" id="user-coments" name="user-coments"
+              placeholder="Введите текст"></textarea>
+            <input class="input-checkbox  visually-hidden" type="checkbox" id="checkbox" name="checkbox" checked  required>
+            <label class="label-checkbox" for="checkbox">Соглашаюсь с рассылкой и принимаю
+              <a class="checkbox-link" href="">Условия договора</a>
+            </label>
+            <button class="modal-button-sent" type="submit" name="modal-button-sent">
+              Отправить
+            </button>
+          </form>
         </div>
     </div>
  </body>
